@@ -1,0 +1,5 @@
+Pasos
+Crear el ambiente virtual: python -m venv venv_data
+Activar el Ambiente virtual: .\venv_data\Scripts\activate
+Instalar los requirements.txt: pip install requirements.txt
+Para desactivar el ambiente: deactivate
