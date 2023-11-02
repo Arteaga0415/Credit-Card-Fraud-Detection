@@ -15,6 +15,13 @@ correlation_with_class = correlation_matrix["Class"].sort_values(ascending=False
 plt.figure(figsize=(12, 8))
 sns.heatmap(correlation_matrix, cmap="coolwarm", annot=False)
 plt.title("Correlation Matrix Heatmap")
+
+# Plot a bar graph of the correlation with the "Class" column
+plt.figure(figsize=(12, 8))
+sns.barplot(x=correlation_with_class.index, y=correlation_with_class.values, palette="coolwarm")
+plt.title("Correlation with Class")
+plt.xticks(rotation=45)
+plt.ylabel("Correlation Value")
 plt.show()
 
 # Print the correlations with the "Class" column
